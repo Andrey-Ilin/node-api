@@ -70,6 +70,7 @@ var unifiedServer = function (req, res) {
         var choosenHandler = typeof(router[trimmedPath]) !== 'undefined' ? router[trimmedPath] : handlers.notFound;
 
         //Construct data object to send to the handler
+
         var data = {
             trimmedPath: trimmedPath,
             queryStringObject: queryStringObject,
